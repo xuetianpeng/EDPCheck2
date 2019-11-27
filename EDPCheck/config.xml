@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <st key="ST" value="16"/>
+    <zc key ="zctime" value ="30000"/>
+    <gz key ="gztime" value ="6000"/>
+    <ph key="admin" value="18626000150"/>
+    <rb key="dd" value ="https://oapi.dingtalk.com/robot/send?access_token=f9a769f021b1378325c9fd5210452dce6c4581e5e4a08b7045f11075f816dca4"/>
+  </appSettings>
+  <Check>
+    <PC>
+      <add key="ZX01" value ="172.172.173.208" type="0"/>
+      <add key="DX01" value ="172.16.16.1" type="1"/>
+      <add key="LT01" value ="172.16.16.1" type="1"/>
+      <add key="LT02" value ="172.16.16.1" type="1"/>
+      <add key="FW01" value ="10.32.240.1" type="2"/>
+      <add key="FW02" value ="10.32.240.5" type="2"/>
+      <add key="ST16" value ="172.16.16.1" type="3"/>
+      <add key="BK16" value ="172.16.16.2" type="3"/>
+      <add key="ED01" value ="172.16.16.11" type="3"/>
+      <add key="WS01" value ="172.16.16.8" type="3"/>
+      <add key="WS02" value ="10.32.244.3" type="3"/>
+      <add key="XTPS" value ="116.62.142.105" type="3"/>
+    </PC>
+  </Check>
+</configuration>

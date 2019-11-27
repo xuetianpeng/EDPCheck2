@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EDPCheck" Class="EDPDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=116.62.142.105;Initial Catalog=EDPCheck;Persist Security Info=True;User ID=sa" SettingsObjectName="EDPCheck.Properties.Settings" SettingsPropertyName="EDPCheckConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_ErrMsg" Member="T_ErrMsg">
+    <Type Name="T_ErrMsg">
+      <Column Name="ErrMsgID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ST" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ErrMsg" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Err" Member="T_Err">
+    <Type Name="T_Err">
+      <Column Name="ERRID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ST" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MacName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MacIP" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_ST" Member="T_ST">
+    <Type Name="T_ST">
+      <Column Name="STID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ST" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LastTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dd" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Msg" Member="T_Msg">
+    <Type Name="T_Msg">
+      <Column Name="MsgID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ST" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Msg" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="MsgTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
